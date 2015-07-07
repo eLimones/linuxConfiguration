@@ -109,3 +109,8 @@ endif
 "vim-airline configuration
 "always show status bar
 set laststatus=2
+"Escpe to normal node using kj
+inoremap kj <Esc>
+cnoremap kj <Esc>
+inoremap <NUL> <C-n>
+noremap ; :
