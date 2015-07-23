@@ -100,6 +100,10 @@ if &diff
   map <F9> :new<CR>:read !svn diff<CR>:set syntax=diff buftype=nofile<CR>gg
 endif
 "vim-airline configuration
+"set fonts
+set guifont=Ubuntu\ Mono\ derivative\ Powerline
+"Enable powerline symbols
+let g:airline_powerline_fonts = 1
 "set airline theme
 let g:airline_theme='molokai'
 "always show status bar
