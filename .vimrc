@@ -13,6 +13,8 @@ Plugin 'gmarik/Vundle.vim'
 " HERE COME THE PLUGGINS
 " cool status line
 Plugin 'bling/vim-airline'
+" Fuzzy serch pluggin
+Plugin 'wincent/command-t'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -47,17 +49,17 @@ set smartindent
 " configure tabwidth and insert spaces instead of tabs
 set tabstop=4        " tab width is 4 spaces
 set shiftwidth=4     " indent also with 4 spaces
-set expandtab        " expand tabs to spaces
+"set expandtab        " expand tabs to spaces
 " wrap lines at 120 chars. 80 is somewaht antiquated with nowadays displays.
 set textwidth=120
 " turn syntax highlighting on
 set t_Co=256
-syntax on
-" colorscheme wombat256
+syntax enable 
+"colorscheme molokai
 " turn line numbers on
 set number
 " highlight matching braces
-set showmatch
+"set showmatch
 " intelligent comments
 set comments=sl:/*,mb:\ *,elx:\ */
 
@@ -70,7 +72,7 @@ set tags+=~/.vim/tags/sdl
 set tags+=~/.vim/tags/qt4
 
 " Install DoxygenToolkit from http://www.vim.org/scripts/script.php?script_id=987
-let g:DoxygenToolkit_authorName="John Doe <john@doe.com>"
+let g:DoxygenToolkit_authorName="Manuel Limones <limonesu.me@gmail.com>"
 
 " Enhanced keyboard mappings
 "
@@ -113,3 +115,8 @@ inoremap kj <Esc>
 cnoremap kj <Esc>
 inoremap <NUL> <C-n>
 noremap ; :
+cmap qq q!<cr>
+cmap ee e!
+let mapleader=","
+map <Leader><Leader> <C-^>
+map <Leader>r :w\|:make run <cr>
