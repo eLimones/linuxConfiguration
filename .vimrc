@@ -15,6 +15,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'bling/vim-airline'
 " Fuzzy serch pluggin
 Plugin 'wincent/command-t'
+" Vim Colorschemes" 
+Plugin 'flazz/vim-colorschemes'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -53,9 +55,11 @@ set shiftwidth=4     " indent also with 4 spaces
 " wrap lines at 120 chars. 80 is somewaht antiquated with nowadays displays.
 set textwidth=120
 " turn syntax highlighting on
+syntax enable
+" set 256 terminal
 set t_Co=256
-syntax enable 
-"colorscheme molokai
+"set background=dark
+color babymate256
 " turn line numbers on
 set number
 " highlight matching braces
@@ -120,3 +124,10 @@ cmap ee e!
 let mapleader=","
 map <Leader><Leader> <C-^>
 map <Leader>r :w\|:make run <cr>
+map <Leader>s :w\|:! ./% <cr>
+
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
