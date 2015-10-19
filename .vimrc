@@ -54,6 +54,8 @@ set shiftwidth=4     " indent also with 4 spaces
 "set expandtab        " expand tabs to spaces
 " wrap lines at 120 chars. 80 is somewaht antiquated with nowadays displays.
 set textwidth=120
+" show at least 80 chars in a split
+set winwidth=80
 " turn syntax highlighting on
 syntax enable
 " set 256 terminal
@@ -96,7 +98,6 @@ set laststatus=2
 "Escpe to normal node using kj
 inoremap kj <Esc>
 cnoremap kj <Esc>
-inoremap <NUL> <C-n>
 noremap ; :
 cmap qq q!<cr>
 cmap ee e!
@@ -110,3 +111,8 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+"Omnicomplete configuration
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
+inoremap <NUL> <C-X><C-o>
+:let g:load_doxygen_syntax=1
