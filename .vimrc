@@ -111,8 +111,11 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+"Insert header file
+nnoremap <Leader>h "='_'.expand('%:t:r').'_h'<C-M>pgUiwI#ifndef <Esc>yypwciwdefine<Esc>yypwciwendif//<Esc>O<Esc>
+
+
 "Omnicomplete configuration
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
-inoremap <NUL> <C-X><C-o>
 :let g:load_doxygen_syntax=1
