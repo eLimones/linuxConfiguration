@@ -121,3 +121,15 @@ fi
 subl() { command ~/bin/Sublime_Text_2/sublime_text "$@" &>/dev/null & }
 export -f subl
 
+alias mp='make -j8'
+
+alias upiita='cd ~/Documents/UPIITA'
+alias mycode='cd ~/Documents/myCode'
+alias arm='cd ~/Documents/myCode/ARM'
+alias stm4='cd ~/Documents/myCode/ARM/STM32F4'
+alias stm3='cd ~/Documents/myCode/ARM/STM32F3'
+alias stm0='cd ~/Documents/myCode/ARM/STM32F0'
+alias tiva='cd ~/Documents/myCode/ARM/TIVAC'
+
+PATH="~/bin/gcc-arm-uclinux-eabi/bin:$PATH"
+export GMOCK_HOME=~/bin/gmock-1.7.0
