@@ -104,6 +104,7 @@ cmap ee e!
 let mapleader=","
 map <Leader><Leader> <C-^>
 map <Leader>r :w\|:make run <cr>
+map <Leader>d :w\|:make test <cr>
 map <Leader>s :w\|:! ./% <cr>
 
 map <C-h> <C-w>h
