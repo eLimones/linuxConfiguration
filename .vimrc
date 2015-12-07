@@ -15,7 +15,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'bling/vim-airline'
 " Fuzzy serch pluggin
 Plugin 'wincent/command-t'
-" Vim Colorschemes" 
+" Vim Colorschemes"
 Plugin 'flazz/vim-colorschemes'
 
 " All of your Plugins must be added before the following line
@@ -95,27 +95,34 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme='molokai'
 "always show status bar
 set laststatus=2
-"Escpe to normal node using kj
+"Escape to normal mode
 inoremap kj <Esc>
 cnoremap kj <Esc>
+inoremap KJ <Esc>
+cnoremap KJ <Esc>
+"Enter command mode
 noremap ; :
+"Force quit
 cmap qq q!<cr>
+"Force edit
 cmap ee e!
+"Map leader key
 let mapleader=","
+"Switch files
 map <Leader><Leader> <C-^>
+"Run make based project
 map <Leader>r :w\|:make run <cr>
-map <Leader>d :w\|:make test <cr>
+"Test make based project
+map <Leader>d :w\|:!make test <cr>
+"Run current scrip
 map <Leader>s :w\|:! ./% <cr>
-
+"Navigate splits
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
-
-"Insert header file
+"Insert header guard
 nnoremap <Leader>h "='_'.expand('%:t:r').'_h'<C-M>pgUiwI#ifndef <Esc>yypwciwdefine<Esc>yypwciwendif//<Esc>O<Esc>
-
-
 "Omnicomplete configuration
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
