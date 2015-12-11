@@ -123,8 +123,11 @@ export -f subl
 
 alias mp='make -j8'
 
-alias upiita='cd ~/Documents/UPIITA'
+alias upiita='cd ~/Documents/UPIITA/'
+alias sensores='cd ~/Documents/UPIITA/sensores'
+alias micros='cd ~/Documents/UPIITA/micros_avanzados'
 alias mycode='cd ~/Documents/myCode'
+alias pycode='cd ~/Documents/myCode/python'
 alias arm='cd ~/Documents/myCode/ARM'
 alias stm4='cd ~/Documents/myCode/ARM/STM32F4'
 alias stm3='cd ~/Documents/myCode/ARM/STM32F3'
