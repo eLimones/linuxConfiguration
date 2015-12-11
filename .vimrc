@@ -116,6 +116,8 @@ map <Leader>r :w\|:make run <cr>
 map <Leader>d :w\|:!make test <cr>
 "Run current scrip
 map <Leader>s :w\|:! ./% <cr>
+"Run current python script
+map <Leader>ps :w\|:!python -c "execfile('%')"<cr>
 "Navigate splits
 map <C-h> <C-w>h
 map <C-j> <C-w>j
