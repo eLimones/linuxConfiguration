@@ -121,6 +121,8 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+"Ignore .pyc files in CommandT searches
+let g:CommandTWildIgnore=&wildignore . ",*.pyc,*__init__.py"
 "Insert header guard
 nnoremap <Leader>h "='_'.expand('%:t:r').'_h'<C-M>pgUiwI#ifndef <Esc>yypwciwdefine<Esc>yypwciwendif//<Esc>O<Esc>
 "Omnicomplete configuration
