@@ -17,6 +17,10 @@ Plugin 'bling/vim-airline'
 Plugin 'wincent/command-t'
 " Vim Colorschemes"
 Plugin 'flazz/vim-colorschemes'
+" Vim Colorschemes"
+Plugin 'mkarmona/colorsbox'
+" Vim Colorschemes"
+Plugin 'wellsjo/wellsokai.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -61,7 +65,7 @@ syntax enable
 " set 256 terminal
 set t_Co=256
 "set background=dark
-color babymate256
+color wellsokai
 " turn line numbers on
 set number
 " highlight matching braces
@@ -92,7 +96,7 @@ set guifont=Ubuntu\ Mono\ derivative\ Powerline
 "Enable powerline symbols
 let g:airline_powerline_fonts = 1
 "set airline theme
-let g:airline_theme='molokai'
+let g:airline_theme='badwolf'
 "always show status bar
 set laststatus=2
 "Escape to normal mode
