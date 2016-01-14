@@ -1,0 +1,17 @@
+[user]
+	email = limonesu.me@gmail.com
+	name = Manuel Limones
+[core]
+	editor = vim
+	editor = autocrlf input
+[alias]
+	st = status
+	d = diff
+	al = add --all
+	au = add -u
+	dw = diff --word-diff
+	ci = commit -v
+	cam = commit -v -a -m
+	cim = commit -v -m
+	pom = pull origin master
+	pullit = pull --rebase
