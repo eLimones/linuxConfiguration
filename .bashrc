@@ -133,6 +133,9 @@ alias stm4='cd ~/Documents/myCode/ARM/STM32F4'
 alias stm3='cd ~/Documents/myCode/ARM/STM32F3'
 alias stm0='cd ~/Documents/myCode/ARM/STM32F0'
 alias tiva='cd ~/Documents/myCode/ARM/TIVAC'
+alias same='cd ~/Documents/myCode/ARM/SAME70E'
 
-PATH="~/bin/gcc-arm-uclinux-eabi/bin:$PATH"
-export GMOCK_HOME=~/bin/gmock-1.7.0
+#PATH="/home/manuel/bin/gcc-arm-uclinux-eabi/bin:$PATH"
+PATH="$PATH:/home/manuel/bin/gcc-arm-embedded/gcc-arm-none-eabi-5_2-2015q4/bin"
+export PATH
+export GMOCK_HOME=/home/manuel/bin/gmock-1.7.0
