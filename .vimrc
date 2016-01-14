@@ -122,6 +122,8 @@ map <Leader>d :w\|:!make test <cr>
 map <Leader>s :w\|:! ./% <cr>
 "Run current python script
 map <Leader>ps :w\|:!python -c "execfile('%')"<cr>
+"Run current python script
+map <Leader>w :w<cr>
 "Navigate splits
 map <C-h> <C-w>h
 map <C-j> <C-w>j
