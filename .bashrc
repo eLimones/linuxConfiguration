@@ -37,7 +37,7 @@ fi
 
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
-    xterm-color) color_prompt=yes;;
+    xterm-color|*-256color) color_prompt=yes;;
 esac
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
@@ -122,10 +122,11 @@ subl() { command ~/bin/Sublime_Text_2/sublime_text "$@" &>/dev/null & }
 export -f subl
 
 alias mp='make -j8'
+alias toclip='xclip -i -selection "clipboard"'
 
-alias upiita='cd ~/Documents/UPIITA/'
-alias sensores='cd ~/Documents/UPIITA/sensores'
-alias micros='cd ~/Documents/UPIITA/micros_avanzados'
+alias upiita='cd ~/Documents/upiita/'
+alias sensores='cd ~/Documents/upiita/sensores'
+alias micros='cd ~/Documents/upiita/micros_avanzados'
 alias mycode='cd ~/Documents/myCode'
 alias pycode='cd ~/Documents/myCode/python'
 alias arm='cd ~/Documents/myCode/ARM'
@@ -133,9 +134,10 @@ alias stm4='cd ~/Documents/myCode/ARM/STM32F4'
 alias stm3='cd ~/Documents/myCode/ARM/STM32F3'
 alias stm0='cd ~/Documents/myCode/ARM/STM32F0'
 alias tiva='cd ~/Documents/myCode/ARM/TIVAC'
-alias same='cd ~/Documents/myCode/ARM/SAME70E'
+alias same='cd ~/Documents/myCode/ARM/SAME70'
 
 #PATH="/home/manuel/bin/gcc-arm-uclinux-eabi/bin:$PATH"
 PATH="$PATH:/home/manuel/bin/gcc-arm-embedded/gcc-arm-none-eabi-5_2-2015q4/bin"
 export PATH
-export GMOCK_HOME=/home/manuel/bin/gmock-1.7.0
+export GMOCK_HOME=/home/manuel/bin/googletest/googlemock
+export RTX_PATH=/home/manuel/Documents/myCode/ARM/rtx
