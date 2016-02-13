@@ -3,7 +3,7 @@
 	name = Manuel Limones
 [core]
 	editor = vim
-	editor = autocrlf input
+	autocrlf = input
 [alias]
 	st = status
 	d = diff
@@ -15,3 +15,5 @@
 	cim = commit -v -m
 	pom = pull origin master
 	pullit = pull --rebase
+[credential]
+	helper = cache --timeout=3600
