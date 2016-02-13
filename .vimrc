@@ -37,11 +37,6 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-" VIM Configuration File
-" Description: Optimized for C/C++ development, but useful also for other things.
-" Author: Gerhard Gappmeier
-"
-
 " set UTF-8 encoding
 set enc=utf-8
 set fenc=utf-8
@@ -49,13 +44,13 @@ set termencoding=utf-8
 " disable vi compatibility (emulation of old bugs)
 set nocompatible
 " use indentation of previous line
+set cindent
+" use indentation of previous line
 set autoindent
-" use intelligent indentation for C
-set smartindent
 " configure tabwidth and insert spaces instead of tabs
 set tabstop=4        " tab width is 4 spaces
 set shiftwidth=4     " indent also with 4 spaces
-"set expandtab        " expand tabs to spaces
+set expandtab        " expand tabs to spaces
 " wrap lines at 120 chars. 80 is somewaht antiquated with nowadays displays.
 set textwidth=120
 " show at least 80 chars in a split
@@ -68,8 +63,6 @@ set t_Co=256
 color wellsokai
 " turn line numbers on
 set number
-" highlight matching braces
-"set showmatch
 " intelligent comments
 set comments=sl:/*,mb:\ *,elx:\ */
 
@@ -129,6 +122,14 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+
+"Search configuration
+"Search as characters are entered
+set incsearch
+"Highlight matches
+set hlsearch
+"Turn off serach highlight
+nnoremap <leader><space> :nohlsearch<cr>
 "Ignore .pyc files in CommandT searches
 let g:CommandTWildIgnore=&wildignore . ",*.pyc,*__init__.py"
 "Insert header guard
