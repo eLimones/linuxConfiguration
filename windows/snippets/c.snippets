@@ -1,0 +1,13 @@
+snippet cguard
+	#ifndef `toupper(Filename('_$1_h'))`
+	#define `toupper(Filename('_$1_h'))`
+
+	#ifdef __cplusplus
+	extern "C" {
+	#endif
+
+	#ifdef __cplusplus
+	}
+	#endif
+
+	#endif /* `toupper(Filename('_$1_h'))` */

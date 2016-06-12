@@ -24,8 +24,9 @@ Plugin 'mkarmona/colorsbox'
 " Vim Colorschemes"
 Plugin 'wellsjo/wellsokai.vim'
 " Vim snippets
-Plugin 'honza/vim-snippets'
-
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -141,7 +142,7 @@ nnoremap <leader><space> :nohlsearch<cr>
 "Ignore .pyc files in CommandT searches
 let g:CommandTWildIgnore=&wildignore . ",*.pyc,*__init__.py"
 "Insert header guard
-nnoremap <Leader>h "='_'.expand('%:t:r').'_h'<C-M>pgUiwI#ifndef <Esc>yypwciwdefine<Esc>yypwciwendif//<Esc>O<Esc>
+nmap <Leader>h icguard<tab><esc>
 "Omnicomplete configuration
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
