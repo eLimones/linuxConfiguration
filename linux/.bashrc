@@ -117,9 +117,6 @@ if ! shopt -oq posix; then
 fi
 
 #HERE start the custom options
-#call sublime text in background mute mode
-subl() { command ~/bin/Sublime_Text_2/sublime_text "$@" &>/dev/null & }
-export -f subl
 
 alias mp='make -j8'
 alias toclip='xclip -i -selection "clipboard"'
