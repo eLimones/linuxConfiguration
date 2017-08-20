@@ -27,6 +27,10 @@ Plugin 'wellsjo/wellsokai.vim'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
+" Jade/pug syntax highlight
+Plugin 'digitaltoad/vim-pug'
+" Surround plugin
+Plugin 'tpope/vim-surround'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
