@@ -121,6 +121,7 @@ fi
 alias mp='make -j8'
 alias toclip='xclip -i -selection "clipboard"'
 
+alias chrome='google-chrome-stable'
 alias upiita='cd ~/Documents/upiita/'
 alias wind='cd ~/Documents/winuser/'
 alias mycode='cd ~/Documents/myCode'
@@ -135,9 +136,10 @@ alias tiva='cd ~/Documents/myCode/ARM/TIVAC'
 alias same='cd ~/Documents/myCode/ARM/SAME70'
 
 #PATH="/home/manuel/bin/gcc-arm-uclinux-eabi/bin:$PATH"
-PATH="$PATH:/home/manuel/bin/gcc-arm-embedded/gcc-arm-none-eabi-5_2-2015q4/bin"
+PATH="$PATH:/home/manuel/bin/gcc-arm-embedded/gcc-arm-none-eabi-6-2017-q2-update/bin"
+
 export PATH
-export GMOCK_HOME=/home/manuel/bin/googletest/googlemock
+export GOOGLETEST_HOME=~/bin/googletest
 export RTX_PATH=/home/manuel/Documents/myCode/ARM/rtx
 
 export NVM_DIR="$HOME/.nvm"
