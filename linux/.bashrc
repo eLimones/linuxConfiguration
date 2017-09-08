@@ -140,8 +140,12 @@ PATH="$PATH:/home/manuel/bin/gcc-arm-embedded/gcc-arm-none-eabi-6-2017-q2-update
 
 export PATH
 export GOOGLETEST_HOME=~/bin/googletest
-export RTX_PATH=/home/manuel/Documents/myCode/ARM/rtx
+export RTX_PATH=~/bin/rtx_lib
 
+# virtual env wrapper configuration
+source ~/.local/bin/virtualenvwrapper.sh
+
+# nvm configuration
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
