@@ -27,6 +27,8 @@ Plugin 'wellsjo/wellsokai.vim'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
+" snippets library
+Plugin 'honza/vim-snippets'
 " Jade/pug syntax highlight
 Plugin 'digitaltoad/vim-pug'
 " Surround plugin
