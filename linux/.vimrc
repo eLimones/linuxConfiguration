@@ -23,16 +23,16 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'mkarmona/colorsbox'
 " Vim Colorschemes"
 Plugin 'wellsjo/wellsokai.vim'
-" Vim snippets
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
+" Ultisnips
+Plugin 'SirVer/ultisnips'
 " snippets library
 Plugin 'honza/vim-snippets'
 " Jade/pug syntax highlight
 Plugin 'digitaltoad/vim-pug'
 " Surround plugin
 Plugin 'tpope/vim-surround'
+" Typescript Syntax for Vim
+Plugin 'leafgarland/typescript-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -150,3 +150,8 @@ nmap <Leader>h icguard<tab><esc>
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 :let g:load_doxygen_syntax=1
+
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
