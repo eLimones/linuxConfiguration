@@ -104,11 +104,6 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme='badwolf'
 "always show status bar
 set laststatus=2
-"Escape to normal mode
-inoremap kj <Esc>
-cnoremap kj <Esc>
-inoremap KJ <Esc>
-cnoremap KJ <Esc>
 "Enter command mode
 noremap ; :
 "Force quit
@@ -145,7 +140,7 @@ nnoremap <leader><space> :nohlsearch<cr>
 "Ignore .pyc files in CommandT searches
 let g:CommandTWildIgnore=&wildignore . ",*.pyc,*__init__.py"
 "Insert header guard
-nmap <Leader>h icguard<tab><esc>
+nmap <Leader>h iinclude_guard<tab><esc>
 "Omnicomplete configuration
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
@@ -153,5 +148,8 @@ set omnifunc=syntaxcomplete#Complete
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpForwardTrigger="<c-m>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsSnippetsDir="~/.vim/mysnippets"
+let g:UltiSnipsSnippetDirectories=["UltiSnips","mysnippets"]
+let g:UltiSnipsEnableSnipMate="0"
