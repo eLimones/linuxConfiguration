@@ -120,11 +120,13 @@ fi
 
 alias mp='make -j8'
 alias toclip='xclip -i -selection "clipboard"'
-
 alias chrome='google-chrome-stable'
+alias ntre='tree -I node_modules'
+
 alias upiita='cd ~/Documents/upiita/'
 alias wind='cd ~/Documents/winuser/'
 alias mycode='cd ~/Documents/myCode'
+alias web='cd ~/Documents/myCode/web'
 alias pycode='cd ~/Documents/myCode/python'
 alias hdl='cd ~/Documents/myCode/hdl'
 alias rcode='cd ~/Documents/myCode/ruby'
