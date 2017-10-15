@@ -130,6 +130,9 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+"Flush Command-t buffer and start search
+map <Leader>f :CommandTFlush<cr><Leader>t
+
 "Search configuration
 "Search as characters are entered
 set incsearch
