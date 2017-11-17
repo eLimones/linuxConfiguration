@@ -25,8 +25,6 @@ Plugin 'mkarmona/colorsbox'
 Plugin 'wellsjo/wellsokai.vim'
 " Ultisnips
 Plugin 'SirVer/ultisnips'
-" snippets library
-Plugin 'honza/vim-snippets'
 " Jade/pug syntax highlight
 Plugin 'digitaltoad/vim-pug'
 " Surround plugin
