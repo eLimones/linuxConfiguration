@@ -47,12 +47,12 @@ esac
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-	# We have color support; assume it's compliant with Ecma-48
-	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
-	# a case would tend to support setf rather than setaf.)
-	color_prompt=yes
+    # We have color support; assume it's compliant with Ecma-48
+    # (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+    # a case would tend to support setf rather than setaf.)
+    color_prompt=yes
     else
-	color_prompt=
+    color_prompt=
     fi
 fi
 
@@ -122,23 +122,25 @@ alias mp='make -j8'
 alias toclip='xclip -i -selection "clipboard"'
 alias chrome='google-chrome-stable'
 alias ntre='tree -I node_modules'
+alias atest='npm run acceptance-tests'
 
 alias upiita='cd ~/Documents/upiita/'
 alias wind='cd ~/Documents/winuser/'
-alias mycode='cd ~/Documents/myCode'
-alias web='cd ~/Documents/myCode/web'
-alias pycode='cd ~/Documents/myCode/python'
-alias hdl='cd ~/Documents/myCode/hdl'
-alias rcode='cd ~/Documents/myCode/ruby'
-alias arm='cd ~/Documents/myCode/arm'
-alias stm4='cd ~/Documents/myCode/arm/stm32f4'
-alias stm3='cd ~/Documents/myCode/arm/stm32f3'
-alias stm0='cd ~/Documents/myCode/arm/stm32f0'
-alias tiva='cd ~/Documents/myCode/arm/tivac'
-alias same='cd ~/Documents/myCode/arm/same70'
+alias mycode='cd ~/Documents/mycode'
+alias web='cd ~/Documents/mycode/web'
+alias pycode='cd ~/Documents/mycode/python'
+alias hdl='cd ~/Documents/mycode/hdl'
+alias rcode='cd ~/Documents/mycode/ruby'
+alias arm='cd ~/Documents/mycode/arm'
+alias stm4='cd ~/Documents/mycode/arm/stm32f4'
+alias stm3='cd ~/Documents/mycode/arm/stm32f3'
+alias stm0='cd ~/Documents/mycode/arm/stm32f0'
+alias tiva='cd ~/Documents/mycode/arm/tivac'
+alias same='cd ~/Documents/mycode/arm/same70'
 
 #PATH="/home/manuel/bin/gcc-arm-uclinux-eabi/bin:$PATH"
 PATH="$PATH:/home/manuel/bin/gcc-arm-embedded/gcc-arm-none-eabi-6-2017-q2-update/bin"
+PATH="$PATH:/home/manuel/bin/idea-IC-173.4548.28/bin"
 
 export PATH
 export GOOGLETEST_HOME=~/bin/googletest
@@ -151,3 +153,14 @@ source ~/.local/bin/virtualenvwrapper.sh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#rust
+source $HOME/.cargo/env
+
+#phpenv
+export PATH="$HOME/.phpenv/bin:$PATH"
+eval "$(phpenv init -)"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/manuel/.sdkman"
+[[ -s "/home/manuel/.sdkman/bin/sdkman-init.sh" ]] && source "/home/manuel/.sdkman/bin/sdkman-init.sh"
