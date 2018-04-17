@@ -31,6 +31,8 @@ Plugin 'digitaltoad/vim-pug'
 Plugin 'tpope/vim-surround'
 " Typescript Syntax for Vim
 Plugin 'leafgarland/typescript-vim'
+" Blade Syntax for Vim
+Plugin 'jwalton512/vim-blade'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
