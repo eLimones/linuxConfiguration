@@ -1,4 +1,6 @@
 {
+    "terminal.integrated.fontFamily": "'Ubuntu Mono Derivative Powerline', monospace",
+    "terminal.integrated.fontSize": 15,
     "vim.disableAnnoyingNeovimMessage": true,
     "keyboard.dispatch": "keyCode",
     "vim.leader": ",",
