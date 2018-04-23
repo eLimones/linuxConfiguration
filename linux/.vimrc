@@ -133,6 +133,9 @@ map <C-l> <C-w>l
 "Flush Command-t buffer and start search
 map <Leader>f :CommandTFlush<cr><Leader>t
 
+cnoremap <expr> %% expand('%:h').'/'
+cnoremap <expr> %, expand('%')
+
 "Search configuration
 "Search as characters are entered
 set incsearch
