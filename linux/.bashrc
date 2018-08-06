@@ -137,7 +137,7 @@ export PATH="/home/manuel/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-# rbenv enconfig
+# rbenv config
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
