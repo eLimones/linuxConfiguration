@@ -126,6 +126,7 @@ alias atest='npm run acceptance-tests'
 
 alias mycode='cd ~/Documents/mycode'
 alias web='cd ~/Documents/mycode/web'
+alias dotfiles='cd ~/Documents/mycode/config/linux_configuration/linux'
 
 # nvm configuration
 export NVM_DIR="$HOME/.nvm"
