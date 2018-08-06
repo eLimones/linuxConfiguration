@@ -96,6 +96,9 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme='badwolf'
 "always show status bar
 set laststatus=2
+
+
+"Custom maps
 "Force quit
 cmap qq q!<cr>
 "Force edit
@@ -108,8 +111,10 @@ map <Leader><Leader> <C-^>
 map <Leader>r :w\|:make run <cr>
 "Test make based project
 map <Leader>d :w\|:!make test <cr>
-"Run current scrip
-map <Leader>s :w\|:wa<cr>
+"Save all files
+map <Leader>s :wa<cr>
+"Quit file
+map <Leader>q :q!<cr>
 "Run current python script
 map <Leader>ps :w\|:!python -c "execfile('%')"<cr>
 "Run current python script
