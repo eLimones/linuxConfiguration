@@ -18,21 +18,13 @@ Plugin 'vim-airline/vim-airline-themes'
 " Fuzzy serch pluggin
 Plugin 'wincent/command-t'
 " Vim Colorschemes"
-Plugin 'flazz/vim-colorschemes'
-" Vim Colorschemes"
-Plugin 'mkarmona/colorsbox'
-" Vim Colorschemes"
 Plugin 'wellsjo/wellsokai.vim'
 " Ultisnips
 Plugin 'SirVer/ultisnips'
-" Jade/pug syntax highlight
-Plugin 'digitaltoad/vim-pug'
 " Surround plugin
 Plugin 'tpope/vim-surround'
-" Typescript Syntax for Vim
-Plugin 'leafgarland/typescript-vim'
-" Blade Syntax for Vim
-Plugin 'jwalton512/vim-blade'
+" Vim syntax support for all languages
+Plugin 'sheerun/vim-polyglot'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
