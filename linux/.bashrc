@@ -128,6 +128,8 @@ alias mycode='cd ~/Documents/mycode'
 alias web='cd ~/Documents/mycode/web'
 alias dotfiles='cd ~/Documents/mycode/config/linux_configuration/linux'
 
+export PATH="/home/manuel/software/bin:$PATH"
+
 # nvm configuration
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
