@@ -1,5 +1,6 @@
 [user]
-	email = limonesu.me@gmail.com
+    #email = limonesu.me@gmail.com
+    email = mlimones@pensare.mx
 	name = Manuel Limones
 [core]
 	editor = vim

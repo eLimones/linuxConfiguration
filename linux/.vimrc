@@ -154,3 +154,5 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsSnippetsDir="~/.vim/mysnippets"
 let g:UltiSnipsSnippetDirectories=["UltiSnips","mysnippets"]
 let g:UltiSnipsEnableSnipMate="0"
+
+let g:jsx_ext_required = 1
