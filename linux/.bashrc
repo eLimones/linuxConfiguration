@@ -126,7 +126,7 @@ alias atest='npm run acceptance-tests'
 
 alias mycode='cd ~/Documents/mycode'
 alias web='cd ~/Documents/mycode/web'
-alias dotfiles='cd ~/Documents/mycode/config/linux_configuration/linux'
+alias dotfiles='cd ~/Documents/mycode/linux_configuration/linux'
 
 export PATH="/home/manuel/software/bin:$PATH"
 
