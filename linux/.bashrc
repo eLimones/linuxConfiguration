@@ -125,8 +125,9 @@ alias ntre='tree -I node_modules'
 alias atest='npm run acceptance-tests'
 
 alias mycode='cd ~/Documents/mycode'
+alias work='cd ~/Documents/work'
 alias web='cd ~/Documents/mycode/web'
-alias dotfiles='cd ~/Documents/mycode/linux_configuration/linux'
+alias dotfiles='cd ~/Documents/mycode/config/linux'
 
 export PATH="/home/manuel/software/bin:$PATH"
 
