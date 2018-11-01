@@ -7,7 +7,7 @@
 	autocrlf = input
 [alias]
 	st = status
-	d = diff
+	ds = diff
 	al = add --all
 	au = add -u
 	dw = diff --word-diff
@@ -16,5 +16,6 @@
 	cim = commit -v -m
 	pom = pull origin master
 	pullit = pull --rebase
+    gh = log --oneline --decorate --all --graph
 [credential]
 	helper = cache --timeout=3600
