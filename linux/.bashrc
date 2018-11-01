@@ -123,6 +123,7 @@ alias toclip='xclip -i -selection "clipboard"'
 alias chrome='google-chrome-stable'
 alias ntre='tree -I node_modules'
 alias atest='npm run acceptance-tests'
+alias phpunit='vendor/phpunit/phpunit/phpunit'
 
 alias mycode='cd ~/Documents/mycode'
 alias work='cd ~/Documents/work'
