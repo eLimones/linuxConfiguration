@@ -129,8 +129,10 @@ alias mycode='cd ~/Documents/mycode'
 alias work='cd ~/Documents/work'
 alias web='cd ~/Documents/mycode/web'
 alias dotfiles='cd ~/Documents/mycode/config/linux'
+alias rtp='npm run build && npm run package && npm run deploy'
 
 export PATH="/home/manuel/software/bin:$PATH"
+export PATH="/home/manuel/.config/composer/vendor/bin:$PATH"
 
 # nvm configuration
 export NVM_DIR="$HOME/.nvm"
@@ -141,11 +143,24 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="/home/manuel/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+complete -C $(which aws_completer) aws
 
 # rbenv config
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+#export PATH="$HOME/.rbenv/bin:$PATH"
+#eval "$(rbenv init -)"
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/manuel/.sdkman"
 [[ -s "/home/manuel/.sdkman/bin/sdkman-init.sh" ]] && source "/home/manuel/.sdkman/bin/sdkman-init.sh"
+
+
+# android sdk env variables 
+export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+# avdmanager, sdkmanager
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin
+# adb, logcat
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+# emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+
+#export flutter
+export PATH="$PATH:/home/manuel/flutter/bin"

@@ -139,7 +139,7 @@ set hlsearch
 "Turn off serach highlight
 nnoremap <leader><space> :nohlsearch<cr>
 "Ignore .pyc files in CommandT searches
-let g:CommandTWildIgnore=&wildignore . ",*.pyc,*__init__.py,node_modules"
+let g:CommandTWildIgnore=&wildignore . ",*.pyc,*__init__.py,node_modules,dist"
 "Insert header guard
 nmap <Leader>h iinclude_guard<tab><esc>
 "Omnicomplete configuration

@@ -1,0 +1,25 @@
+set surround
+
+
+"Map leader key
+let mapleader=","
+"Switch files
+map <Leader><Leader> <C-^>
+"Run make based project
+map <Leader>r :w\|:make run <cr>
+"Test make based project
+map <Leader>d :w\|:!make test <cr>
+"Save all files
+map <Leader>s :wa<cr>
+"Quit file
+map <Leader>q :q!<cr>
+"Run current python script
+map <Leader>ps :w\|:!python -c "execfile('%')"<cr>
+"Run current python script
+map <Leader>w :w<cr>
+
+"Navigate splits
+map <C-h> <C-w>h
+map <C-J> <C-w>j
+map <C-K> <C-w>k
+map <C-l> <C-w>l

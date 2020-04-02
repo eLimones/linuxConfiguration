@@ -1,5 +1,4 @@
 [user]
-    #email = limonesu.me@gmail.com
     email = mlimones@pensare.mx
 	name = Manuel Limones
 [core]
@@ -16,6 +15,10 @@
 	cim = commit -v -m
 	pom = pull origin master
 	pullit = pull --rebase
-    gh = log --oneline --decorate --all --graph
+	gh = log --oneline --decorate --all --graph
+	compromiso = commit 
+	rama = branch 
 [credential]
 	helper = cache --timeout=3600
+[push]
+	default = simple
