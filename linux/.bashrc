@@ -141,9 +141,9 @@ export NVM_DIR="$HOME/.nvm"
 
 # pyenv enconfig
 export PATH="/home/manuel/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-complete -C $(which aws_completer) aws
+#eval "$(pyenv init -)"
+#eval "$(pyenv virtualenv-init -)"
+#complete -C $(which aws_completer) aws
 
 # rbenv config
 #export PATH="$HOME/.rbenv/bin:$PATH"
@@ -163,4 +163,4 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 
 #export flutter
-export PATH="$PATH:/home/manuel/flutter/bin"
+export PATH="$PATH:/home/manuel/Android/flutter/bin"

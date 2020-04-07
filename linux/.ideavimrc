@@ -1,16 +1,15 @@
 set surround
 
-
 "Map leader key
 let mapleader=","
 "Switch files
 map <Leader><Leader> <C-^>
 "Run make based project
-map <Leader>r :w\|:make run <cr>
+map <Leader>r :action Run <cr>
 "Test make based project
-map <Leader>d :w\|:!make test <cr>
+map <Leader>d :action Flutter.Toolbar.ReloadAction<cr>
 "Save all files
-map <Leader>s :wa<cr>
+map <Leader>s :action SaveAll<cr>
 "Quit file
 map <Leader>q :q!<cr>
 "Run current python script
